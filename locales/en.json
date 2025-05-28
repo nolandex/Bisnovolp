@@ -1,0 +1,47 @@
+{
+  "Hero": {
+    "title1": "Mulai",
+    "title2": "Bisnis Online",
+    "title3": "dengan Cepat",
+    "description": "Bisnovo bantu kamu bikin bisnis online lengkap — dari website, branding, konten, sampai otomatisasi. Semua dengan cepat"
+  },
+  "SocialProof": {
+    "maker": " orang sudah berhasil mulai bisnisnya dengan cepat dan mudah bersama Bisnovo"
+  },
+  "Showcase": {
+    "title": "Cerita Sukses",
+    "description": "Lebih dari 1000+ orang sudah berhasil mulai bisnisnya dengan cepat dan mudah bersama Bisnovo."
+  },
+  "Feature": {
+    "title": "Yang Kamu Dapatkan"
+  },
+  "Pricing": {
+    "title": "Paket Layanan",
+    "title2": "Harga simpel. Layanan lengkap.",
+    "description": "Pilih paket yang sesuai kebutuhanmu. Cepat, praktis, dan hasil maksimal.",
+    "doYouLike": "Tertarik dengan layanan kami?",
+    "follow": "Follow Instagram kami @bisnovoco"
+  },
+  "Testimonials": {
+    "title": "Testimoni Klien",
+    "description1": "Pendapat nyata dari mereka yang sudah membangun bisnis dengan Bisnovo.",
+    "description2": "Lihat cerita mereka",
+    "description3": "dan hasilnya."
+  },
+  "FAQ": {
+    "title": "Pertanyaan Umum",
+    "description": "Temukan jawaban atas pertanyaan yang sering ditanyakan tentang layanan kami."
+  },
+  "CTA": {
+    "title": "Mulai Bisnismu Hari Ini",
+    "description1": "Kami bantu buatkan",
+    "description2": "website bisnismu,",
+    "description3": "kuatkan",
+    "description4": "brand kamu, dan",
+    "description5": "bantu kamu jualan",
+    "description6": " secara online."
+  },
+  "CTAButton": {
+    "title": "Mulai Sekarang"
+  }
+}
