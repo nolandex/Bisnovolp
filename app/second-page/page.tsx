@@ -65,10 +65,10 @@ export default function SecondPage() {
     <div className={`min-h-screen pt-20 pb-8 ${theme === "dark" ? "bg-gray-900" : "bg-gray-50"}`}>
       <div className="container mx-auto px-4 max-w-4xl">
         {/* Category Buttons */}
-        <div className="flex justify-center gap-4 mb-8">
+        <div className="flex justify-center gap-4 mb-6">
           <button
             onClick={() => setActiveCategory("business")}
-            className={`px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-300 ${
+            className={`px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 ${
               activeCategory === "business"
                 ? theme === "dark"
                   ? "bg-blue-600 text-white shadow-lg"
@@ -82,7 +82,7 @@ export default function SecondPage() {
           </button>
           <button
             onClick={() => setActiveCategory("website")}
-            className={`px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-300 ${
+            className={`px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 ${
               activeCategory === "website"
                 ? theme === "dark"
                   ? "bg-blue-600 text-white shadow-lg"
@@ -97,25 +97,25 @@ export default function SecondPage() {
         </div>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 gap-4">
           {filteredProducts.map((product, index) => (
             <div
               key={index}
-              className={`rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl ${
+              className={`rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-lg ${
                 theme === "dark" ? "bg-gray-800 border border-gray-700" : "bg-white border border-gray-200"
               }`}
             >
               {/* Product Info */}
-              <div className="p-5">
+              <div className="p-3">
                 {/* Header dengan Nama Produk dan Harga */}
-                <div className="flex justify-between items-start mb-4">
+                <div className="flex justify-between items-start mb-2">
                   <h3
-                    className={`text-base font-bold leading-tight ${theme === "dark" ? "text-white" : "text-gray-900"}`}
+                    className={`text-sm font-bold leading-tight ${theme === "dark" ? "text-white" : "text-gray-900"}`}
                   >
                     {product.name}
                   </h3>
                   <span
-                    className={`px-3 py-1.5 rounded-full text-sm font-bold whitespace-nowrap ml-2 ${
+                    className={`px-2 py-1 rounded-md text-xs font-bold whitespace-nowrap ml-2 ${
                       product.price === "Rp 0"
                         ? theme === "dark"
                           ? "bg-green-600 text-white"
@@ -123,23 +123,23 @@ export default function SecondPage() {
                         : theme === "dark"
                           ? "bg-gradient-to-r from-blue-600 to-blue-700 text-white"
                           : "bg-gradient-to-r from-blue-500 to-blue-600 text-white"
-                    } shadow-md`}
+                    } shadow-sm`}
                   >
                     {product.price}
                   </span>
                 </div>
 
                 {/* Features */}
-                <div className="mb-5">
-                  <ul className="space-y-2">
+                <div className="mb-3">
+                  <ul className="space-y-1">
                     {product.features.map((feature, i) => (
                       <li key={i} className="flex items-center">
                         <CheckCircle
-                          className={`h-4 w-4 mr-3 flex-shrink-0 ${
+                          className={`h-3 w-3 mr-2 flex-shrink-0 ${
                             theme === "dark" ? "text-green-400" : "text-green-500"
                           }`}
                         />
-                        <span className={`text-sm ${theme === "dark" ? "text-gray-300" : "text-gray-600"}`}>
+                        <span className={`text-xs ${theme === "dark" ? "text-gray-300" : "text-gray-600"}`}>
                           {feature}
                         </span>
                       </li>
@@ -148,25 +148,25 @@ export default function SecondPage() {
                 </div>
 
                 {/* Action Buttons */}
-                <div className="flex gap-3">
+                <div className="flex gap-2">
                   <button
-                    className={`flex-1 py-3 px-4 rounded-lg font-semibold text-sm transition-all duration-300 shadow-md hover:shadow-lg ${
+                    className={`flex-1 py-1.5 px-3 rounded-md font-medium text-xs transition-all duration-300 shadow-sm hover:shadow-md ${
                       theme === "dark"
                         ? "bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white"
                         : "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white"
                     }`}
                   >
-                    Bayar Sekarang
+                    Bayar
                   </button>
                   <button
                     onClick={() => openExample(product)}
-                    className={`px-4 py-3 rounded-lg font-semibold text-sm transition-all duration-300 border-2 ${
+                    className={`px-2 py-1.5 rounded-md font-medium text-xs transition-all duration-300 border ${
                       theme === "dark"
                         ? "border-gray-600 text-gray-300 hover:bg-gray-700 hover:border-gray-500"
                         : "border-gray-300 text-gray-700 hover:bg-gray-50 hover:border-gray-400"
-                    } flex items-center gap-2 shadow-md hover:shadow-lg`}
+                    } flex items-center gap-1 shadow-sm hover:shadow-md`}
                   >
-                    <ExternalLink className="h-4 w-4" />
+                    <ExternalLink className="h-3 w-3" />
                     Contoh
                   </button>
                 </div>
@@ -185,11 +185,11 @@ export default function SecondPage() {
             >
               {/* Modal Header */}
               <div
-                className={`flex justify-between items-center p-5 border-b ${
+                className={`flex justify-between items-center p-4 border-b ${
                   theme === "dark" ? "border-gray-700 bg-gray-750" : "border-gray-200 bg-gray-50"
                 }`}
               >
-                <h2 className={`text-xl font-bold ${theme === "dark" ? "text-white" : "text-gray-900"}`}>
+                <h2 className={`text-lg font-bold ${theme === "dark" ? "text-white" : "text-gray-900"}`}>
                   Contoh: {showExample.name}
                 </h2>
                 <button
@@ -200,7 +200,7 @@ export default function SecondPage() {
                       : "hover:bg-gray-200 text-gray-600 hover:text-gray-900"
                   }`}
                 >
-                  <X className="h-6 w-6" />
+                  <X className="h-5 w-5" />
                 </button>
               </div>
 
