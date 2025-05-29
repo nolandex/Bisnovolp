@@ -25,25 +25,25 @@ export default function SecondPage() {
   const products: Product[] = [
     // Kategori Paket Bisnis Online
     {
-      name: "Paket Bisnis Starter",
+      name: "Paket Bisnis Online",
       price: "Rp 50.000",
       category: "business",
-      features: ["Website Profesional", "Chatbot Otomatis", "Social Media Content"],
+      features: ["Website Landing Page", "Chatbot Otomatis", "Social Media Content", "Sosmed Booster", "Trik Promosi"],
       exampleUrl: "https://example.com",
     },
     // Kategori Website
     {
-      name: "Website Toko Online",
+      name: "Toko Online",
       price: "Rp 25.000",
       category: "website",
-      features: ["Domain gratis", "Hosting unlimited", "Responsif"],
+      features: ["Domain gratis", "Hosting gratis"],
       exampleUrl: "https://shopify.com",
     },
     {
-      name: "Website Landing Page",
+      name: "Landing Page",
       price: "Rp 25.000",
       category: "website",
-      features: ["Domain gratis", "Hosting unlimited", "Responsif"],
+      features: ["Domain gratis", "Hosting gratis"],
       exampleUrl: "https://unbounce.com",
     },
   ]
@@ -63,9 +63,9 @@ export default function SecondPage() {
 
   return (
     <div className={`min-h-screen pt-20 pb-8 ${theme === "dark" ? "bg-gray-900" : "bg-gray-50"}`}>
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
         {/* Category Buttons */}
-        <div className="flex justify-center gap-4 mb-6">
+        <div className="flex flex-col sm:flex-row justify-center gap-2 sm:gap-4 mb-6">
           <button
             onClick={() => setActiveCategory("business")}
             className={`px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 ${
@@ -97,7 +97,7 @@ export default function SecondPage() {
         </div>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-3 sm:gap-4">
           {filteredProducts.map((product, index) => (
             <div
               key={index}
@@ -177,9 +177,9 @@ export default function SecondPage() {
 
         {/* Example Website Modal */}
         {showExample && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-2 sm:p-4">
             <div
-              className={`max-w-5xl w-full h-[85vh] rounded-xl ${
+              className={`max-w-5xl w-full h-[90vh] sm:h-[85vh] rounded-xl ${
                 theme === "dark" ? "bg-gray-800" : "bg-white"
               } overflow-hidden shadow-2xl`}
             >
