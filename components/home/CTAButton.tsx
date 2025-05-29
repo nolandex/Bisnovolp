@@ -23,22 +23,22 @@ export default function CTAButton({ locale }: CTAButtonProps) {
       <Button
         onClick={handleClick}
         variant="default"
-        className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white"
+        className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg"
       >
         <RocketIcon className="w-4 h-4" />
         {locale.title}
       </Button>
       <a
-        href="https://wa.me/6285156779923?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Anda!" // Ganti nomor dan teks sesuai kebutuhan
+        href="https://wa.me/1234567890?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Anda!" // Ganti nomor dan teks sesuai kebutuhan
         target="_blank"
         rel="noopener noreferrer"
       >
         <Button
           variant="default"
-          className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white" // Warna hijau untuk WhatsApp
+          className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg"
         >
           <MessageCircle className="w-4 h-4" /> {/* Ikon WhatsApp */}
-          Hubungi via WhatsApp
+          Chat WhatsApp
         </Button>
       </a>
     </div>
