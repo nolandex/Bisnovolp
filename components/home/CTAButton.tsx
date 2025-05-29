@@ -29,7 +29,7 @@ export default function CTAButton({ locale }: CTAButtonProps) {
         {locale.title}
       </Button>
       <a
-        href="https://wa.me/1234567890?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Anda!" // Ganti nomor dan teks sesuai kebutuhan
+        href="https://wa.me/6285156779923?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Anda!" // Ganti nomor dan teks sesuai kebutuhan
         target="_blank"
         rel="noopener noreferrer"
       >
